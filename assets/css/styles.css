@@ -1,0 +1,117 @@
+@import "./global.css";
+@import "./header.css";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.button {
+  background: #3430ec 0% 0% no-repeat padding-box;
+  color: #fff;
+  text-align: left;
+  font: italic normal bold 13px/13px Mont;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  padding: 10px;
+  gap: 8px;
+  border-radius: 10px;
+  border: 3px solid black;
+  transition: 0.3s ease-in-out;
+  text-shadow: black 1px 1px 1px;
+}
+
+.message {
+  font: italic normal 900 35px/48px Mont;
+  padding: 32px 0 16px 0;
+}
+
+.game-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid black;
+  border-radius: 4px;
+  background-color: #3430ec;
+  padding: 1em;
+  gap: 0.5em;
+  width: 700px;
+  height: 600px;
+}
+
+.row {
+  display: flex;
+  flex: 1;
+  gap: 0.5em;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  border: 3px solid black;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.restart-button {
+  margin-top: 8px;
+  padding: 12px;
+  border: 3px solid black;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 0.5;
+    border: 1px solid #666;
+  }
+
+  50% {
+    opacity: 1;
+    border: 1px solid #000000;
+  }
+
+  100% {
+    opacity: 0.5;
+    border: 1px solid #666;
+  }
+}
+
+.won {
+  animation: blinking 2s infinite;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.navy {
+  background-color: navy;
+}
+
+.green {
+  background-color: green;
+}
+
+.purple {
+  background-color: purple;
+}

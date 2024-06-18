@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+    <title>Connect 4</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container nav-container">
+        <input class="checkbox" type="checkbox" name="" id="" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>  
+        <div class="menu">
+          <h2>Menu</h2>
+          <form>
+            <div class="menu-option">
+              <label for="seq-num">Length of the winning sequence:</label>
+              <input
+                type="number"
+                id="seq-num"
+                name="seqNum"
+                min="1"
+                max="12"
+                placeholder="4"
+              />
+            </div>
+            <div class="menu-option">
+              <label for="row-num">Number of rows:</label>
+              <input
+                type="number"
+                id="row-num"
+                name="rowNum"
+                min="1"
+                max="18"
+                placeholder="6"
+              />
+            </div>
+            <div class="menu-option">
+              <label for="col-num">Number of columns:</label>
+              <input
+                type="number"
+                id="col-num"
+                name="colNum"
+                min="1"
+                max="21"
+                placeholder="7"
+              />
+            </div>
+            <div class="player-settings"></div>
+            <button type="submit" value="Submit" class="settings-button button">
+              Apply
+            </button>
+          </form>
+        </div>
+    </div>
+  </div>
+      <h1 id="title">Connect 4</h1>
+    </header>
+
+    <div class="page-container">
+
+      <div class="game-container">
+        <div class="message">Message</div>
+        <div class="board-container"></div>
+        <button class="restart-button button">Restart Game</button>
+      </div>
+    </div>
+    <script src="./assets/js/script.js" type="module"></script>
+  </body>
+</html>
