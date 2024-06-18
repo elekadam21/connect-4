@@ -1,4 +1,5 @@
-Rules: It is the goal of the game to connect four of your tokens in a line. All directions (vertical, horizontal, diagonal) are allowed. Players take turns putting one of their tokens into one of the seven slots. A token falls down as far as possible within a slot. The player with the red tokens begins. The game ends immediately when one player connects four stones.
+This project was my implementation of the Connect Four game, made with Vanilla JavaScript, HTML and CSS. On top of the default game, the row, column and winning sequence numbers are adjustable and more than 2 players (with custom names and colors) can play.
 
-Rules:
-The four in a row rules are very simple. It’s always played with 2 players and in a 7x6 grid. Each turn each player puts a piece of his color inside a column and it will fall until it reaches the lowest available spot. The one who can put 4 pieces of the same color in a row horizontally, vertically or diagonally wins. If no one manages to do it then the match ends in a draw.
+Connect Four is a game in which the players choose a color and then take turns dropping colored tokens into a six-row, seven-column vertically suspended grid. The pieces fall straight down, occupying the lowest available space within the column. The objective of the game is to be the first to form a horizontal, vertical, or diagonal line of four of one's own tokens.
+
+Deployed at: [Connect 4](https://elekadam21.github.io/connect-4/)
